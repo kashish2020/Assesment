@@ -33,8 +33,8 @@ public class Student01 {
 			return false;
 			
 		}
-		Student01 st=(Student01)a;
-		boolean result=this.rollno equals(st.rollno);
+		Student01 std=(Student01)a;
+		boolean result=this.rollno equals(std.rollno);
 		return result;
 		
 	}
