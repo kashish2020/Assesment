@@ -21,8 +21,8 @@ public class Student01 {
 	}
 	@Override
 	public int hashCode() {
-		int h=rollno.hashCode();
-		return h;
+		int hash=rollno.hashCode();
+		return hash;
 	}
 	public boolean checkequals(Object a) {
 		if(a==this) {
