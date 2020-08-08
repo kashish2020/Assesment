@@ -28,8 +28,8 @@ public class StudentMain01 {
 		for (String k : keys) {
 			Student fetched = map.get(k);
 			int i = fetched.getAge();
-			String j = fetched.getRollNo();
-			allrollno.add(j);
+			String hash = fetched.getRollNo();
+			allrollno.add(hash);
 			if (i % 2 == 0) {
 				seteven.add(fetched);
 			}
