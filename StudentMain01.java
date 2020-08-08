@@ -24,35 +24,19 @@ public class StudentMain01 {
 		map.put("5",std5);
 		map.put("6",std6);
 		
-		conversion(map);
-
-	}
-	public Object conversion(Map<String, Studen01> map2) {
-		Set<String> keys = map2.keySet();
-
-		
-		int i;
-		int hash;
-		String rno;
-		for(String k:keys) {
-			li.add(k);
-			i=map2.getAge(k);
-			hash=k.hashCode();
-			
-			rno=k;
-			checkEquals(rno);
-			if(i%2==0) {
-				even.add(i);
+		Set<String> keys = map.keySet();
+		for (String k : keys) {
+			Student fetched = map.get(k);
+			int i = fetched.getAge();
+			String j = fetched.getRollNo();
+			allrollno.add(j);
+			if (i % 2 == 0) {
+				seteven.add(fetched);
 			}
-			else {
-				odd.add(i);
+			if (i % 2 != 0) {
+				setodd.add(fetched);
 			}
-			return hash;
-			
-		}		
-		return li;
-		return odd;
-		return even;
+			System.out.println("Age=" + fetched.getAge() + " " + "Rollno" + fetched.getRollNo());
 	}
 }
 
